@@ -30,9 +30,9 @@
 							<ul>
 								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
 								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#recommendations" id="arecommendations-link"><span class="icon solid fa-certificate">Recommendations</span></a></li>
 								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
 								<li><a href="#blog" id="blog-link"><span class="icon solid fa-book">Blog</span></a></li>
+								<li><a href="#recommendations" id="arecommendations-link"><span class="icon solid fa-envelope">Recommendations</span></a></li>
 								<li><a href="#certifications" id="certifications-link"><span class="icon solid fa-certificate">Certifications</span></a></li>
 								
 							</ul>
@@ -89,74 +89,7 @@
 							<a href="https://drive.google.com/file/d/1klFy0kvR_uJQyG8roc2o43CdhMTtm89u/view?usp=sharing" class="button scrolly">Download Resume</a>
 						</div>
 					</section>
-					<!-- Recommendations -->
-					<section id="recommendations" class="four">
-				
-	
-							<header>
-								<h2>Recommendations</h2>
-							</header>
-						<div class="slideshow-container">
-
-							<!-- Full-width images with number and caption text -->
-							<div class="mySlides fade">
-							
-							<img src="images/rec_img1.png" style="width:100%">
-						
-							</div>
-						
-							<div class="mySlides fade">
-							
-							<img src="images/rec_img2.png"" style="width:100%">
-							
-							</div>
-						
-							<div class="mySlides fade">
-							
-							<img src="images/rec_img3.png"" style="width:100%">
-						
-							</div>
-						
-							<!-- Next and previous buttons -->
-							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-							<a class="next" onclick="plusSlides(1)">&#10095;</a>
-						</div>
-						<br>
-						
-						<!-- The dots/circles -->
-						<div style="text-align:center">
-							<span class="dot" onclick="currentSlide(1)"></span>
-							<span class="dot" onclick="currentSlide(2)"></span>
-							<span class="dot" onclick="currentSlide(3)"></span>
-						</div>
-						<script>
-							let slideIndex = 1;
-							showSlides(slideIndex);
-							
-							function plusSlides(n) {
-							  showSlides(slideIndex += n);
-							}
-							
-							function currentSlide(n) {
-							  showSlides(slideIndex = n);
-							}
-							
-							function showSlides(n) {
-							  let i;
-							  let slides = document.getElementsByClassName("mySlides");
-							  let dots = document.getElementsByClassName("dot");
-							  if (n > slides.length) {slideIndex = 1}    
-							  if (n < 1) {slideIndex = slides.length}
-							  for (i = 0; i < slides.length; i++) {
-								slides[i].style.display = "none";  
-							  }
-							  for (i = 0; i < dots.length; i++) {
-								dots[i].className = dots[i].className.replace(" active", "");
-							  }
-							  slides[slideIndex-1].style.display = "block";  
-							  dots[slideIndex-1].className += " active";
-							}
-							</script>
+					
 				<!-- Portfolio -->
 					<section id="portfolio" class="three">
 						<div class="container">
@@ -282,7 +215,74 @@
 					<br>
 					<br>
 					<br>
+					<!-- Recommendations -->
+					<section id="recommendations" class="four">
+				
+	
+						<header>
+							<h2>Recommendations</h2>
+						</header>
+					<div class="slideshow-container">
 
+						<!-- Full-width images with number and caption text -->
+						<div class="mySlides fade">
+						
+						<img src="images/rec_img1.png" style="width:100%">
+					
+						</div>
+					
+						<div class="mySlides fade">
+						
+						<img src="images/rec_img2.png"" style="width:100%">
+						
+						</div>
+					
+						<div class="mySlides fade">
+						
+						<img src="images/rec_img3.png"" style="width:100%">
+					
+						</div>
+					
+						<!-- Next and previous buttons -->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+					<br>
+					
+					<!-- The dots/circles -->
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+					</div>
+					<script>
+						let slideIndex = 1;
+						showSlides(slideIndex);
+						
+						function plusSlides(n) {
+						  showSlides(slideIndex += n);
+						}
+						
+						function currentSlide(n) {
+						  showSlides(slideIndex = n);
+						}
+						
+						function showSlides(n) {
+						  let i;
+						  let slides = document.getElementsByClassName("mySlides");
+						  let dots = document.getElementsByClassName("dot");
+						  if (n > slides.length) {slideIndex = 1}    
+						  if (n < 1) {slideIndex = slides.length}
+						  for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";  
+						  }
+						  for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						  }
+						  slides[slideIndex-1].style.display = "block";  
+						  dots[slideIndex-1].className += " active";
+						}
+						</script>
 					<!-- Certifications -->
 					<section id="certifications" class="three">
 						<div class="container">
